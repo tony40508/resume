@@ -1,0 +1,71 @@
+doctype html
+html(lang="zh-TW")
+    head
+        meta(charset="UTF-8")
+        title My Resume
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0")
+        link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
+        //- CSS
+        link(rel="stylesheet" href="css/base.css")
+        link(rel="stylesheet" href="css/layout.css")
+        link(rel="stylesheet" href="css/component.css")
+        
+    body
+        .wrapper
+            //- Start bg
+            .bg
+            //- End bg
+
+            //- Start header
+            header.header
+                .container
+                    .navbar.navbar--collapse.u-clearfix
+                        .social-bar.navbar__social-bar
+                            a.icon-btn(href="#")
+                                i.icon-github-circled
+                            a.icon-btn(href="#")
+                                i.icon-codeopen
+                            a.icon-btn(href="#")
+                                i.icon-facebook-official
+                        .nav.navbar__nav
+                            a.menu-toggle(href="#popup-overlay")
+                                span
+                                span
+                                span
+                            .popup-menu#popup-overlay
+                                .container
+                                    .u-clearfix
+                                        a.popup-menu__close(href="#")
+                                            span
+                                            span
+                                    ul
+                                        li
+                                            a.popup-menu__item(href="#") ABOUT
+                                        li
+                                            a.popup-menu__item(href="#") SKILL
+                                        li
+                                            a.popup-menu__item(href="#") EXPERIENCE
+                                        li
+                                            a.popup-menu__item(href="#") MY WORK
+                                        li
+                                            a.popup-menu__item(href="#") CONTACT
+            //- End header
+
+            //- Start main
+            sector.main
+                //- Start about
+                .hero
+                    .hero__bg
+                    .container
+                        .hero__content
+                            h1.hero__heading 
+                                | HELLO 
+                                br
+                                | I'M TAKEU
+                        a.btn.btn--primary.btn--md(href="#") Contact
+                //- End about
+            //- End main
+
+            //- Start footer
+            footer
+            //- End footer
