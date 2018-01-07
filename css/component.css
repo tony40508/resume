@@ -412,4 +412,137 @@
     background-size: 200px;
   }
 }
+
+/*-------------------------*/
+/* $Qote */
+/*-------------------------*/
+.quote {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.quote__content {
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  color: #484848;
+}
+
+.quote__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #e881a7;
+  text-align: center;
+  line-height: 64px;
+  font-size: 32px;
+  color: #fefefe;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.quote__text {
+  font-family: "redactedregular";
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.quote__name span {
+  color: #e881a7;
+}
+
+/*-------------------------*/
+/* $Skill */
+/*-------------------------*/
+.skill {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  .skill {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.skill-group {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.skill-card {
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+
+.skill-card__inner {
+  background-color: #fefefe;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+  padding-left: 48px;
+}
+
+.skill-card__title {
+  color: #e881a7;
+  font-family: 'Raleway','Helvetica', 'roboto', arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.skill-card__text {
+  font-family: 'redacted_scriptbold';
+  margin: 0;
+}
+
+.skill-card__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f3f4f5;
+}
+
+.skill-card__icon .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60%;
+  max-height: 60%;
+}
+
+@media (max-width: 768px) {
+  .skill-card__icon {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .skill-card {
+    padding: 0;
+    margin-top: 48px;
+  }
+  .skill-card__inner {
+    padding: 24px;
+    padding-top: 48px;
+  }
+  .skill-group {
+    padding-bottom: 0;
+  }
+}
 /*# sourceMappingURL=component.css.map */
