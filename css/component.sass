@@ -474,7 +474,96 @@
         padding: 24px
         padding-top: 48px
     
+    // 取消最後一個的 padding
     .skill-group
         padding-bottom: 0
     
+/*-------------------------*/
+/* $Experience
+/*-------------------------*/
+.experience
+    padding-top: 80px
+    padding-bottom: 80px
+
+@media(max-width: 768px)
+    .experience
+        padding-top: 40px
+        padding-bottom: 40px
+
+/* timeline 
+/*---------------------*/
+.timeline-group
+    max-width: 960px
+    margin-right: auto
+    margin-left: auto
+    margin-top: 120px
+
+.timeline
+    width: 4px
+    height: 100%
+    background-color: #e881a7
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5)
+
+.timeline-cards__row:nth-child(odd)
+    display: flex
+    justify-content: flex-start
+
+.timeline-cards__row:nth-child(even)
+    display: flex
+    justify-content: flex-end
+
+.timeline-card
+    padding: 24px
+    background-color: #fefefe
+    border-radius: 4px
+    width: calc(50% - 24px)
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5)
+
+.timeline-card:before
+    content: ""
+    width: 16px
+    height: 16px
+    border-radius: 50%
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5)
+    background-color: #e881a7
+    position: absolute
+    top: 50%
+
+.timeline-cards__row:nth-child(odd) > :before
+    transform: translate(50%,-50%)
+    right: -24px
+
+.timeline-cards__row:nth-child(even) > :before
+    transform: translate(-50%,-50%)
+    left: -24px
+
+.timeline-card__text
+    font-family: 'redacted_scriptbold'
+    color: #000000
+    margin: 0
+
+@media (max-width: 768px)
+    .timeline
+        left: 0
+    
+    .timeline-card
+        width: calc(100% - 24px)
+        margin-bottom: 24px
+    
+    // 取消最後一個的 margin
+    .timeline-cards__row:last-child .timeline-card
+        margin-bottom: 0
+    
+    .timeline-cards__row:nth-child(odd)
+        justify-content: flex-end
+    
+    .timeline-cards__row:nth-child(odd) > :before
+        transform: translate(-50%,-50%)
+        left: -24px
+    
+
 
