@@ -10,6 +10,7 @@ html(lang="zh-TW")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i")
         link(rel="stylesheet" href="css/layout.css")
         link(rel="stylesheet" href="css/animate.css")
+        link(rel="stylesheet" href="css/jquery.fancybox.css")
         link(rel="stylesheet" href="css/component.css")
         
     body
@@ -149,8 +150,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work001_thumb.jpg')")
+                                                a(href="./img/works/work001.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work001_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text.work-item__text--right 
                                                 h3.work-item__title.work-item__title--right WORK 001
@@ -160,8 +162,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work002_thumb.jpg')")
+                                                a(href="./img/works/work002.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work002_thumb.jpg')")
                                         .col-sm-4.col-sm-push-1
                                             .work-item__text
                                                 h3.work-item__title.work-item__title--left WORK 002
@@ -171,8 +174,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-6
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work003_thumb.jpg')")
+                                                a(href="./img/works/work003.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work003_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text
                                                 h3.work-item__title.work-item__title--right WORK 003
@@ -182,8 +186,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work004_thumb.jpg')")
+                                                a(href="./img/works/work004.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work004_thumb.jpg')")
                                         .col-sm-4.col-sm-push-1
                                             .work-item__text 
                                                 h3.work-item__title.work-item__title--right WORK 004
@@ -193,8 +198,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work005_thumb.jpg')")
+                                                a(href="./img/works/work005.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work005_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text.work-item__text--right 
                                                 h3.work-item__title.work-item__title--right WORK 005
@@ -227,4 +233,5 @@ html(lang="zh-TW")
         //- JS
         script(src="./js/jquery-2.0.2.min.js")
         script(src="./js/wow.min.js")
+        script(src="./js/jquery.fancybox.min.js")
         script(src="./js/custom.js")
