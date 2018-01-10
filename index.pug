@@ -7,7 +7,9 @@ html(lang="zh-TW")
         link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
         //- CSS
         link(rel="stylesheet" href="css/base.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i")
         link(rel="stylesheet" href="css/layout.css")
+        link(rel="stylesheet" href="css/animate.css")
         link(rel="stylesheet" href="css/component.css")
         
     body
@@ -58,11 +60,9 @@ html(lang="zh-TW")
                     .hero__bg
                     .container
                         .hero__content
-                            h1.hero__heading 
-                                | HELLO 
-                                br
-                                | I'M TAKEU
-                        a.btn.btn--primary.btn--md(href="#") Contact
+                            pre
+                                h1#hero__text.hero__heading
+                            a.btn.btn--primary.btn--md.wow.rubberBand(href="#footer") Contact
                 //- End about
 
                 //- Start quote
@@ -75,25 +75,24 @@ html(lang="zh-TW")
                                         .icon-search
                                     p.quote__text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt expedita deleniti laboriosam consectetur tempora minima debitis, amet nam illo est numquam ipsam cupiditate! Excepturi doloremque numquam dolorum tenetur aut? Veniam.Corporis, quod veritatis? Debitis quia dolorum maiores hic asperiores. Perferendis quia unde libero ex quae hic explicabo adipisci, culpa asperiores! Libero perferendis debitis, accusantium voluptas repellendus delectus ad asperiores sapiente.
                                     .quote__name I am form 
-                                        span NCKU
-                                    
+                                        span NCKU              
                 //- End quote
 
                 //- Start skill
                 .skill.bg-color-white.lean-bg--bottom 
                     .container
-                        h2.subtitle.u-text-center SKILL
+                        h2.subtitle.u-text-center.wow.bounceInUp SKILL
                         .skill-group
                             .row
                                 .col-sm-6
-                                    .skill-card
+                                    .skill-card.wow.bounceInUp(data-wow-delay="0.2s")
                                         .skill-card__inner
                                             h4.skill-card__title React.js
                                             p.skill-card__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quis ipsam. Accusantium magni facilis vero perspiciatis, tempora nisi. Magni natus dolores dolorem vero obcaecati molestias iusto provident minus sapiente consectetur!
                                         .skill-card__icon 
                                             img.image(src="./img/skill_icon/react-icon.png", alt="")
                                 .col-sm-6
-                                    .skill-card
+                                    .skill-card.wow.bounceInUp(data-wow-delay="0.4s")
                                         .skill-card__inner
                                             h4.skill-card__title Vue.js
                                             p.skill-card__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quis ipsam. Accusantium magni facilis vero perspiciatis, tempora nisi. Magni natus dolores dolorem vero obcaecati molestias iusto provident minus sapiente consectetur! 
@@ -101,14 +100,14 @@ html(lang="zh-TW")
                                             img.image(src="./img/skill_icon/vue-icon.png", alt="")
                             .row
                                 .col-sm-6
-                                    .skill-card
+                                    .skill-card.wow.bounceInUp(data-wow-delay="0.6s")
                                         .skill-card__inner
                                             h4.skill-card__title D3.js
                                             p.skill-card__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quis ipsam. Accusantium magni facilis vero perspiciatis, tempora nisi. Magni natus dolores dolorem vero obcaecati molestias iusto provident minus sapiente consectetur! 
                                         .skill-card__icon 
                                             img.image(src="./img/skill_icon/d3-icon.png", alt="")
                                 .col-sm-6
-                                    .skill-card
+                                    .skill-card.wow.bounceInUp(data-wow-delay="0.8s")
                                         .skill-card__inner
                                             h4.skill-card__title Sketch
                                             p.skill-card__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quis ipsam. Accusantium magni facilis vero perspiciatis, tempora nisi. Magni natus dolores dolorem vero obcaecati molestias iusto provident minus sapiente consectetur!
@@ -119,24 +118,24 @@ html(lang="zh-TW")
                 //- Start experience
                 .experience
                     .container
-                        h2.subtitle.u-text-center.color-white EXPERIENCE
+                        h2.subtitle.u-text-center.color-white.wow.bounceInUp EXPERIENCE
                             .timeline-group
                                 .timeline
                                 .timeline-cards
                                     .timeline-cards__row
-                                        .timeline-card
+                                        .timeline-card.wow.bounceInUp
                                             h4 2017.11 JSDC 2017
                                             p.timeline-card__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nulla dolore commodi quia. Doloribus, incidunt in natus aliquid exercitationem architecto rerum.
                                     .timeline-cards__row
-                                        .timeline-card
+                                        .timeline-card.wow.bounceInUp
                                             h4 2017.11 CCNS IoT by jserv 
                                             p.timeline-card__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nulla dolore commodi quia. Doloribus, incidunt in natus aliquid exercitationem architecto rerum.
                                     .timeline-cards__row
-                                        .timeline-card
+                                        .timeline-card.wow.bounceInUp
                                             h4 2017.11 D3.js in CNC 
                                             p.timeline-card__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nulla dolore commodi quia. Doloribus, incidunt in natus aliquid exercitationem architecto rerum.
                                     .timeline-cards__row
-                                        .timeline-card
+                                        .timeline-card.wow.bounceInUp
                                             h4 2017.09 NCKU 
                                             p.timeline-card__text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nulla dolore commodi quia. Doloribus, incidunt in natus aliquid exercitationem architecto rerum.          
                 //- End experience
@@ -144,9 +143,9 @@ html(lang="zh-TW")
                 //- Start work
                 .work.bg-color-white.lean-bg--top.lean-bg--bottom  
                     .container
-                        h2.subtitle.u-text-center MY WORKS
+                        h2.subtitle.u-text-center.wow.bounceInUp MY WORKS
                             .work-list
-                                .work-item
+                                .work-item.wow.fadeInUp
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
@@ -157,7 +156,7 @@ html(lang="zh-TW")
                                                 h3.work-item__title.work-item__title--right WORK 001
                                                 p.work-item__intro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam iure, neque, ipsa maxime eligendi repellat accusamus quibusdam vel, sunt consequuntur quidem ipsum similique enim assumenda exercitationem reprehenderit cupiditate quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae quis accusamus a ipsum? Blanditiis, excepturi doloremque exercitationem, autem facilis quidem iure id saepe quam dolorum 
                                                 a(href="#").text-btn.text-btn--primary.text-btn--lg Show project
-                                .work-item
+                                .work-item.wow.fadeInUp
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
@@ -168,7 +167,7 @@ html(lang="zh-TW")
                                                 h3.work-item__title.work-item__title--left WORK 002
                                                 p.work-item__intro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam iure, neque, ipsa maxime eligendi repellat accusamus quibusdam vel, sunt consequuntur quidem ipsum similique enim assumenda exercitationem reprehenderit cupiditate quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae quis accusamus a ipsum? Blanditiis, excepturi doloremque exercitationem, autem facilis quidem iure id saepe quam dolorum 
                                                 a(href="#").text-btn.text-btn--primary.text-btn--lg Show project
-                                .work-item
+                                .work-item.wow.fadeInUp
                                     .row
                                         .col-sm-6.col-sm-push-6
                                             .imgbox
@@ -179,7 +178,7 @@ html(lang="zh-TW")
                                                 h3.work-item__title.work-item__title--right WORK 003
                                                 p.work-item__intro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam iure, neque, ipsa maxime eligendi repellat accusamus quibusdam vel, sunt consequuntur quidem ipsum similique enim assumenda exercitationem reprehenderit cupiditate quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae quis accusamus a ipsum? Blanditiis, excepturi doloremque exercitationem, autem facilis quidem iure id saepe quam dolorum 
                                                 a(href="#").text-btn.text-btn--primary.text-btn--lg Show project
-                                .work-item
+                                .work-item.wow.fadeInUp
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
@@ -190,7 +189,7 @@ html(lang="zh-TW")
                                                 h3.work-item__title.work-item__title--right WORK 004
                                                 p.work-item__intro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam iure, neque, ipsa maxime eligendi repellat accusamus quibusdam vel, sunt consequuntur quidem ipsum similique enim assumenda exercitationem reprehenderit cupiditate quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae quis accusamus a ipsum? Blanditiis, excepturi doloremque exercitationem, autem facilis quidem iure id saepe quam dolorum 
                                                 a(href="#").text-btn.text-btn--primary.text-btn--lg Show project
-                                .work-item
+                                .work-item.wow.fadeInUp
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
@@ -207,18 +206,18 @@ html(lang="zh-TW")
             //- End main
 
             //- Start footer
-            footer
+            footer#footer
                 .info 
-                    .info__phone
+                    .info__phone.wow.shake
                         a(href="tel:09723371XX") 09723371XX
-                    .info__email
+                    .info__email.wow.shake(data-wow-delay="1s")
                         a(href="mailTo:tony40508@gmail.com") tony40508@gmail.com
                     .social-bar.info__social-bar
-                        a.icon-btn(href="#")
+                        a.icon-btn.wow.bounceIn(href="#" data-wow-delay="0.3s")
                             i.icon.icon-slack
-                        a.icon-btn(href="#")
+                        a.icon-btn.wow.bounceIn(href="#" data-wow-delay="0.6s")
                             i.icon.icon-medium
-                        a.icon-btn(href="#")
+                        a.icon-btn.wow.bounceIn(href="#" data-wow-delay="0.9s")
                             i.icon.icon-dribbble
                 .container
                     p.final-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ex veniam ab eius quod quo iusto enim alias labore, magnam doloribus ratione expedita laboriosam placeat, eaque vel aliquam sunt sapiente.
@@ -227,4 +226,5 @@ html(lang="zh-TW")
         
         //- JS
         script(src="./js/jquery-2.0.2.min.js")
+        script(src="./js/wow.min.js")
         script(src="./js/custom.js")
