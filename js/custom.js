@@ -14,6 +14,8 @@ $(document).ready(function(){
 	
 	// link animation
 	$(document).on("click", "a", function (e) {
+		if ($('.menu-toggle')) return 
+		
 		e.preventDefault();
 		const target = $(this).attr("href");
 		
