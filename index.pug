@@ -10,6 +10,7 @@ html(lang="zh-TW")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i")
         link(rel="stylesheet" href="css/layout.css")
         link(rel="stylesheet" href="css/animate.css")
+        link(rel="stylesheet" href="css/jquery.fancybox.css")
         link(rel="stylesheet" href="css/component.css")
         
     body
@@ -42,21 +43,21 @@ html(lang="zh-TW")
                                             span
                                     ul
                                         li
-                                            a.popup-menu__item(href="#") ABOUT
+                                            a.popup-menu__item(href="#about") ABOUT
                                         li
-                                            a.popup-menu__item(href="#") SKILL
+                                            a.popup-menu__item(href="#skill") SKILL
                                         li
-                                            a.popup-menu__item(href="#") EXPERIENCE
+                                            a.popup-menu__item(href="#experience") EXPERIENCE
                                         li
-                                            a.popup-menu__item(href="#") MY WORK
-                                        li
-                                            a.popup-menu__item(href="#") CONTACT
+                                            a.popup-menu__item(href="#work") MY WORK
             //- End header
 
             //- Start main
             sector.main
                 //- Start about
-                .hero
+                #about.hero
+                    img.graphic_001(src="./img/parallax_graphic/hyper.svg" data-stellar-ratio="1.5" alt="")
+                    img.graphic_002.u-xs-hidden(src="./img/parallax_graphic/webpack.svg" data-stellar-ratio="2" alt="")
                     .hero__bg
                     .container
                         .hero__content
@@ -67,6 +68,8 @@ html(lang="zh-TW")
 
                 //- Start quote
                 .quote.bg-color-white.lean-bg--top.lean-bg--no-margin  
+                    img.graphic_003.u-xs-hidden(src="./img/parallax_graphic/vim.svg" data-stellar-ratio="1.6" alt="")
+                    img.graphic_004.u-xs-hidden(src="./img/parallax_graphic/visual-studio-code.svg" data-stellar-ratio="1.5" alt="")
                     .container
                         .row
                             .col-sm-6.col-sm-push-3
@@ -79,7 +82,9 @@ html(lang="zh-TW")
                 //- End quote
 
                 //- Start skill
-                .skill.bg-color-white.lean-bg--bottom 
+                #skill.skill.bg-color-white.lean-bg--bottom 
+                    img.graphic_005.u-xs-hidden(src="./img/parallax_graphic/reactivex.svg" data-stellar-ratio="1.5" alt="")
+                    img.graphic_006.u-xs-hidden(src="./img/parallax_graphic/graphql.svg" data-stellar-ratio="2" alt="")
                     .container
                         h2.subtitle.u-text-center.wow.bounceInUp SKILL
                         .skill-group
@@ -116,7 +121,11 @@ html(lang="zh-TW")
                 //- End skill
 
                 //- Start experience
-                .experience
+                #experience.experience
+                    img.graphic_007.u-xs-hidden(src="./img/parallax_graphic/jest.svg" data-stellar-ratio="1.5" alt="")
+                    img.graphic_008.u-xs-hidden(src="./img/parallax_graphic/mdn.svg" data-stellar-ratio="1.5" alt="")
+                    img.graphic_009.u-xs-hidden(src="./img/parallax_graphic/es6.svg" data-stellar-ratio="1.1" alt="")
+                    img.graphic_010.u-xs-hidden(src="./img/parallax_graphic/nightwatch.svg" data-stellar-ratio="1.2" alt="")
                     .container
                         h2.subtitle.u-text-center.color-white.wow.bounceInUp EXPERIENCE
                             .timeline-group
@@ -141,7 +150,16 @@ html(lang="zh-TW")
                 //- End experience
 
                 //- Start work
-                .work.bg-color-white.lean-bg--top.lean-bg--bottom  
+                #work.work.bg-color-white.lean-bg--top.lean-bg--bottom
+                    img.graphic_011.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_012.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_013.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_014.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_015.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_016.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_017.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_018.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
+                    img.graphic_019.u-xs-hidden(src="./img/parallax_graphic/" data-stellar-ratio="1.5" alt="")
                     .container
                         h2.subtitle.u-text-center.wow.bounceInUp MY WORKS
                             .work-list
@@ -149,8 +167,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work001_thumb.jpg')")
+                                                a(href="./img/works/work001.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work001_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text.work-item__text--right 
                                                 h3.work-item__title.work-item__title--right WORK 001
@@ -160,8 +179,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work002_thumb.jpg')")
+                                                a(href="./img/works/work002.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work002_thumb.jpg')")
                                         .col-sm-4.col-sm-push-1
                                             .work-item__text
                                                 h3.work-item__title.work-item__title--left WORK 002
@@ -171,8 +191,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-6
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work003_thumb.jpg')")
+                                                a(href="./img/works/work003.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work003_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text
                                                 h3.work-item__title.work-item__title--right WORK 003
@@ -182,8 +203,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-1
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work004_thumb.jpg')")
+                                                a(href="./img/works/work004.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work004_thumb.jpg')")
                                         .col-sm-4.col-sm-push-1
                                             .work-item__text 
                                                 h3.work-item__title.work-item__title--right WORK 004
@@ -193,8 +215,9 @@ html(lang="zh-TW")
                                     .row
                                         .col-sm-6.col-sm-push-5
                                             .imgbox
-                                                .imgbox__inner.imgbox__inner--4-3
-                                                    .image(style="background-image: url('./img/works/thumbnail/work005_thumb.jpg')")
+                                                a(href="./img/works/work005.jpg" data-fancybox="group")
+                                                    .imgbox__inner.imgbox__inner--4-3
+                                                        .image(style="background-image: url('./img/works/thumbnail/work005_thumb.jpg')")
                                         .col-sm-4.col-sm-pull-5
                                             .work-item__text.work-item__text--right 
                                                 h3.work-item__title.work-item__title--right WORK 005
@@ -227,4 +250,6 @@ html(lang="zh-TW")
         //- JS
         script(src="./js/jquery-2.0.2.min.js")
         script(src="./js/wow.min.js")
+        script(src="./js/jquery.fancybox.min.js")
+        script(src="./js/jquery.stellar.min.js")
         script(src="./js/custom.js")
