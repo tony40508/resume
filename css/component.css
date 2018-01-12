@@ -964,7 +964,7 @@
 
 .graphic_011 {
   top: 5%;
-  left: -5%;
+  left: -1%;
 }
 
 .graphic_012 {
@@ -979,7 +979,7 @@
 
 .graphic_014 {
   top: 50%;
-  left: 10%;
+  left: -5%;
 }
 
 .graphic_015 {
@@ -988,12 +988,12 @@
 }
 
 .graphic_016 {
-  top: 71%;
-  right: 10%;
+  top: 60%;
+  right: -1%;
 }
 
 .graphic_017 {
-  top: 70%;
+  top: 50%;
   right: 5%;
 }
 
@@ -1003,7 +1003,7 @@
 }
 
 .graphic_019 {
-  top: 90%;
+  top: 100%;
   left: 20%;
 }
 
